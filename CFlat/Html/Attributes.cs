@@ -1,8 +1,14 @@
+using System.Collections;
+
 namespace CFlat.Html;
 
 public class Attributes<T>
 {
     protected List<ElementAttribute<T>> _attributes;
+    
+    public ElementAttribute<T> this[int i] => _attributes[i];
+    
+    public int Count => _attributes.Count;
 
     public Attributes(List<ElementAttribute<T>> attributes)
     {
@@ -33,6 +39,17 @@ public class Attributes<T>
         }
         return false;
     }
+
+    public string GetAttributes()
+    {
+        string _attr = "";
+        foreach (ElementAttribute<T> attr in _attributes)
+        {
+            _attr += $" {attr.Name}=\"{attr.Value.ToString() ?? ""}\"";
+        }
+        return _attr;
+    }
+
 }
 
 

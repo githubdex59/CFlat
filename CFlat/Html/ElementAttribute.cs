@@ -1,5 +1,8 @@
 namespace CFlat.Html;
-
+/// <summary>
+/// 
+/// </summary>
+/// <typeparam name="T"></typeparam>
 public class ElementAttribute<T>
 {
     public string Name;
@@ -21,6 +24,9 @@ public class ElementAttribute<T>
 
     public bool Equals(ElementAttribute<T> other)
     {
+        if (other.Value == null) return false;
+        if (Value == null) return false;
+
         return Name == other.Name && Value.Equals(other.Value);
     }
 

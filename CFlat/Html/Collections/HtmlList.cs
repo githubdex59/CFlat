@@ -1,8 +1,16 @@
 namespace CFlat.Html.Collections;
 
+/// <summary>
+/// Represents the `ol` `ul` and `menu` tags, usage is the same as List<<typeparamref name="T"/>>.
+///
+/// Set the Ordering to Ordering.Ordered to generate a `ol`, Ordering.Unordered to generate an `ul`, and Ordering.Menu to generate a `menu`.
+/// </summary>
+/// <typeparam name="T"></typeparam>
 public class HtmlList<T> : List<T>, HtmlElement
 {
-    
+    /// <summary>
+    /// Used to determine the tag generation
+    /// </summary>
     public Ordering _ordering;
 
     public HtmlList(Ordering ordering, Attributes attributes)
