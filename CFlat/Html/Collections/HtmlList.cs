@@ -1,3 +1,5 @@
+using System.Net.Sockets;
+
 namespace CFlat.Html.Collections;
 
 /// <summary>
@@ -88,5 +90,10 @@ public class HtmlList<T> : List<T>, HtmlElement
         
 
         return html;
+
+    }
+    public string Render(ref NetworkStream stream)
+    {
+        return Render();
     }
 }

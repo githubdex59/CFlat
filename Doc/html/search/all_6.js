@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['get_0',['GET',['../namespaceCFlat_1_1Routing.html#a4d8bb0783e09f9ab3fc1f9f21bc348a6a7528035a93ee69cedb1dbddb2f0bfcc8',1,'CFlat::Routing']]],
-  ['getattributes_1',['GetAttributes',['../classCFlat_1_1Html_1_1Attributes-1-g.html#a80e7d0aa0f1e994ad963b3014e951d64',1,'CFlat::Html::Attributes-1-g']]],
-  ['getvalue_2',['GetValue',['../classCFlat_1_1Html_1_1Attributes-1-g.html#a7871b2b9b73b6a87e882448bf515cac0',1,'CFlat::Html::Attributes-1-g']]]
+  ['features_0',['Features',['../md_README.html#autotoc_md1',1,'']]],
+  ['file_1',['File',['../classCFlat_1_1Routing_1_1StaticFile_1_1File.html',1,'CFlat.Routing.StaticFile.File'],['../classCFlat_1_1Routing_1_1StaticFile_1_1File.html#a29733f5dba84329868ea8c90a96f654b',1,'CFlat.Routing.StaticFile.File.File()']]],
+  ['flat_2',['C Flat',['../md_README.html#autotoc_md0',1,'']]]
 ];

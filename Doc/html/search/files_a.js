@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['reciever_2ecs_0',['Reciever.cs',['../Reciever_8cs.html',1,'']]],
-  ['route_2ecs_1',['Route.cs',['../Route_8cs.html',1,'']]]
+  ['paragraphs_2ecs_0',['Paragraphs.cs',['../Paragraphs_8cs.html',1,'']]],
+  ['program_2ecs_1',['Program.cs',['../Program_8cs.html',1,'']]]
 ];

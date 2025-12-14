@@ -14,30 +14,32 @@ internal class Root : WebPage
         )
     {
         
-        _children.Add(new HtmlList<int>([1, 2, 3, 4, 5, 6, 7, 8, 9],
+        Add(new HtmlList<int>([1, 2, 3, 4, 5, 6, 7, 8, 9],
             Ordering.Ordered,
             new Attributes(new List<ElementAttribute<string>>(
                 [new ElementAttribute<string>("type", "a")]
                 ))));
-        _children.Add(new HtmlList<int>([1, 2, 3, 4, 5, 6, 7, 8, 9],
+        Add(new HtmlList<int>([1, 2, 3, 4, 5, 6, 7, 8, 9],
             Ordering.Ordered,
             new Attributes(new List<ElementAttribute<string>>(
                 [new ElementAttribute<string>("type", "A")]
             ))));
-        _children.Add(new HtmlList<int>([1, 2, 3, 4, 5, 6, 7, 8, 9],
+        Add(new HtmlList<int>([1, 2, 3, 4, 5, 6, 7, 8, 9],
             Ordering.Ordered,
             new Attributes(new List<ElementAttribute<string>>(
                 [new ElementAttribute<string>("type", "i")]
             ))));
-        _children.Add(new HtmlList<int>([1, 2, 3, 4, 5, 6, 7, 8, 9],
+        Add(new HtmlList<int>([1, 2, 3, 4, 5, 6, 7, 8, 9],
             Ordering.Ordered,
             new Attributes(new List<ElementAttribute<string>>(
                 [new ElementAttribute<string>("type", "I")]
             ))));
-        _children.Add(new HtmlList<int>([1, 2, 3, 4, 5, 6, 7, 8, 9],
+        Add(new HtmlList<int>([1, 2, 3, 4, 5, 6, 7, 8, 9],
             Ordering.Ordered,
             new Attributes(new List<ElementAttribute<string>>(
                 [new ElementAttribute<string>("type", "1")]
             ))));
     }
+
+    
 }

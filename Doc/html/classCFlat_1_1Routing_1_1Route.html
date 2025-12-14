@@ -94,23 +94,47 @@ $(function(){initNavTree('classCFlat_1_1Routing_1_1Route.html','','classCFlat_1_
 
 <p>Used in <a class="el" href="classCFlat_1_1Receiver.html" title="The included web server.">Receiver</a> to determine what to run when a request is received.  
  <a href="#details">More...</a></p>
+<div class="dynheader">
+Inheritance diagram for CFlat.Routing.Route:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="classCFlat_1_1Routing_1_1Route.png" usemap="#CFlat_2ERouting_2ERoute_map" alt=""/>
+  <map id="CFlat_2ERouting_2ERoute_map" name="CFlat_2ERouting_2ERoute_map">
+<area href="classCFlat_1_1Routing_1_1StaticFile.html" alt="CFlat.Routing.StaticFile" shape="rect" coords="0,112,144,136"/>
+  </map>
+</div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ad291daca15cf411158dcdebc7697d807" id="r_ad291daca15cf411158dcdebc7697d807"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad291daca15cf411158dcdebc7697d807">Route</a> (string path, <a class="el" href="classCFlat_1_1Html_1_1WebPage.html">WebPage</a> page, <a class="el" href="namespaceCFlat_1_1Routing.html#a4d8bb0783e09f9ab3fc1f9f21bc348a6">Method</a> method)</td></tr>
+<tr class="memitem:a47705681110004cc5918de8b53cff263" id="r_a47705681110004cc5918de8b53cff263"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a47705681110004cc5918de8b53cff263">Equals</a> (<a class="el" href="#ad291daca15cf411158dcdebc7697d807">Route</a>? other)</td></tr>
+<tr class="memitem:a6c125e86943b14f50d98b958f679b61a" id="r_a6c125e86943b14f50d98b958f679b61a"><td class="memItemLeft" align="right" valign="top">override bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6c125e86943b14f50d98b958f679b61a">Equals</a> (object? obj)</td></tr>
+<tr class="memitem:a1073a4a19270c8bb86a592513a18a28f" id="r_a1073a4a19270c8bb86a592513a18a28f"><td class="memItemLeft" align="right" valign="top">override int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1073a4a19270c8bb86a592513a18a28f">GetHashCode</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ab9571fe78059a3699f5e944a380bb53f" id="r_ab9571fe78059a3699f5e944a380bb53f"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab9571fe78059a3699f5e944a380bb53f">operator==</a> (<a class="el" href="#ad291daca15cf411158dcdebc7697d807">Route</a> x, <a class="el" href="#ad291daca15cf411158dcdebc7697d807">Route</a> y)</td></tr>
+<tr class="memitem:a8775889943b0e9bc8f79e5db837258b6" id="r_a8775889943b0e9bc8f79e5db837258b6"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8775889943b0e9bc8f79e5db837258b6">operator!=</a> (<a class="el" href="#ad291daca15cf411158dcdebc7697d807">Route</a> x, <a class="el" href="#ad291daca15cf411158dcdebc7697d807">Route</a> y)</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a848a41ca60dc5c80f323e59a666bb07d" id="r_a848a41ca60dc5c80f323e59a666bb07d"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a848a41ca60dc5c80f323e59a666bb07d">_path</a></td></tr>
 <tr class="memdesc:a848a41ca60dc5c80f323e59a666bb07d"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classCFlat_1_1Receiver.html" title="The included web server.">Receiver</a> uses this to get the appropriate response, for example: client requests /foo/bar, <a class="el" href="classCFlat_1_1Receiver.html" title="The included web server.">Receiver</a> searches through it's list of Routes and finds /foo/bar, then calls <em>_page</em> .Render().  <br /></td></tr>
 <tr class="memitem:ab0286b078c2f1281ecb58520cafa7abc" id="r_ab0286b078c2f1281ecb58520cafa7abc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCFlat_1_1Html_1_1WebPage.html">WebPage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab0286b078c2f1281ecb58520cafa7abc">_page</a></td></tr>
+<tr class="memdesc:ab0286b078c2f1281ecb58520cafa7abc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Your webpage.  <br /></td></tr>
 <tr class="memitem:a85e2087b9bc3fb91c3156ca632ca135f" id="r_a85e2087b9bc3fb91c3156ca632ca135f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceCFlat_1_1Routing.html#a4d8bb0783e09f9ab3fc1f9f21bc348a6">Method</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a85e2087b9bc3fb91c3156ca632ca135f">_method</a></td></tr>
+<tr class="memdesc:a85e2087b9bc3fb91c3156ca632ca135f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Currently supported: GET.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pac-methods" class="groupheader"><a id="pac-methods" name="pac-methods"></a>
+Package Functions</h2></td></tr>
+<tr class="memitem:af319a8db233aebd9d407630207b11fcf" id="r_af319a8db233aebd9d407630207b11fcf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af319a8db233aebd9d407630207b11fcf">Route</a> (string path, <a class="el" href="namespaceCFlat_1_1Routing.html#a4d8bb0783e09f9ab3fc1f9f21bc348a6">Method</a> method)</td></tr>
+<tr class="memdesc:af319a8db233aebd9d407630207b11fcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">DO NOT USE!  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Used in <a class="el" href="classCFlat_1_1Receiver.html" title="The included web server.">Receiver</a> to determine what to run when a request is received. </p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad291daca15cf411158dcdebc7697d807" name="ad291daca15cf411158dcdebc7697d807"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad291daca15cf411158dcdebc7697d807">&#9670;&#160;</a></span>Route()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad291daca15cf411158dcdebc7697d807">&#9670;&#160;</a></span>Route() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -143,6 +167,179 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="af319a8db233aebd9d407630207b11fcf" name="af319a8db233aebd9d407630207b11fcf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af319a8db233aebd9d407630207b11fcf">&#9670;&#160;</a></span>Route() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CFlat.Routing.Route.Route </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>path</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceCFlat_1_1Routing.html#a4d8bb0783e09f9ab3fc1f9f21bc348a6">Method</a></td>          <td class="paramname"><span class="paramname"><em>method</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel package">package</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>DO NOT USE! </p>
+<p>This is for comparison purposes only!</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td></td></tr>
+    <tr><td class="paramname">method</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="a6c125e86943b14f50d98b958f679b61a" name="a6c125e86943b14f50d98b958f679b61a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c125e86943b14f50d98b958f679b61a">&#9670;&#160;</a></span>Equals() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override bool CFlat.Routing.Route.Equals </td>
+          <td>(</td>
+          <td class="paramtype">object?</td>          <td class="paramname"><span class="paramname"><em>obj</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a47705681110004cc5918de8b53cff263" name="a47705681110004cc5918de8b53cff263"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47705681110004cc5918de8b53cff263">&#9670;&#160;</a></span>Equals() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CFlat.Routing.Route.Equals </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#ad291daca15cf411158dcdebc7697d807">Route</a>?</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1073a4a19270c8bb86a592513a18a28f" name="a1073a4a19270c8bb86a592513a18a28f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1073a4a19270c8bb86a592513a18a28f">&#9670;&#160;</a></span>GetHashCode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">override int CFlat.Routing.Route.GetHashCode </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8775889943b0e9bc8f79e5db837258b6" name="a8775889943b0e9bc8f79e5db837258b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8775889943b0e9bc8f79e5db837258b6">&#9670;&#160;</a></span>operator!=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CFlat.Routing.Route.operator!= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#ad291daca15cf411158dcdebc7697d807">Route</a></td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#ad291daca15cf411158dcdebc7697d807">Route</a></td>          <td class="paramname"><span class="paramname"><em>y</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab9571fe78059a3699f5e944a380bb53f" name="ab9571fe78059a3699f5e944a380bb53f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9571fe78059a3699f5e944a380bb53f">&#9670;&#160;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CFlat.Routing.Route.operator== </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#ad291daca15cf411158dcdebc7697d807">Route</a></td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="#ad291daca15cf411158dcdebc7697d807">Route</a></td>          <td class="paramname"><span class="paramname"><em>y</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
 <a id="a85e2087b9bc3fb91c3156ca632ca135f" name="a85e2087b9bc3fb91c3156ca632ca135f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a85e2087b9bc3fb91c3156ca632ca135f">&#9670;&#160;</a></span>_method</h2>
@@ -155,6 +352,8 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Currently supported: GET. </p>
 
 </div>
 </div>
@@ -169,6 +368,8 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Your webpage. </p>
 
 </div>
 </div>

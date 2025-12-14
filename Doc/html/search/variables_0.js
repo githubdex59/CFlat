@@ -1,15 +1,22 @@
 var searchData=
 [
   ['_5fattributes_0',['_attributes',['../classCFlat_1_1Html_1_1Attributes-1-g.html#a6b83cc4d63cc799b49a7cbf5390d4eed',1,'CFlat::Html::Attributes-1-g']]],
-  ['_5fhead_1',['_head',['../classCFlat_1_1Html_1_1WebPage.html#afee9933f26757a07f8fac945b5e36589',1,'CFlat::Html::WebPage']]],
-  ['_5finstance_2',['_instance',['../classCFlat_1_1Receiver.html#a595042ca693e603e5c900bc73eeb0819',1,'CFlat::Receiver']]],
-  ['_5flistener_3',['_listener',['../classCFlat_1_1Receiver.html#aec3604ee5c241d7300206b08d12b3807',1,'CFlat::Receiver']]],
-  ['_5fmetas_4',['_metas',['../classCFlat_1_1Html_1_1Base_1_1HtmlHead.html#a2e1f860b14521b04d9b6f0c14d5bdc0b',1,'CFlat::Html::Base::HtmlHead']]],
-  ['_5fmethod_5',['_method',['../classCFlat_1_1Routing_1_1Route.html#a85e2087b9bc3fb91c3156ca632ca135f',1,'CFlat::Routing::Route']]],
-  ['_5fname_6',['_name',['../classCFlat_1_1Html_1_1WebPage.html#a7429f0bef79f46d601509e6f23d629ef',1,'CFlat::Html::WebPage']]],
-  ['_5fordering_7',['_ordering',['../classCFlat_1_1Html_1_1Collections_1_1HtmlList-1-g.html#a4c5c9d702b27c80d09bce08429b16921',1,'CFlat::Html::Collections::HtmlList-1-g']]],
-  ['_5fpage_8',['_page',['../classCFlat_1_1Routing_1_1Route.html#ab0286b078c2f1281ecb58520cafa7abc',1,'CFlat::Routing::Route']]],
-  ['_5fpath_9',['_path',['../classCFlat_1_1Routing_1_1Route.html#a848a41ca60dc5c80f323e59a666bb07d',1,'CFlat::Routing::Route']]],
-  ['_5froutes_10',['_routes',['../classCFlat_1_1Receiver.html#a880a2de593a9830846612b3ed0c54912',1,'CFlat::Receiver']]],
-  ['_5ftitle_11',['_title',['../classCFlat_1_1Html_1_1Base_1_1HtmlHead.html#a8b2393ac3e610056c0bddbe09e62987b',1,'CFlat::Html::Base::HtmlHead']]]
+  ['_5fcharmap_1',['_charMap',['../classCFlat_1_1Html_1_1Base_1_1Strings_1_1HtmlParagraph.html#a63b7d6a2e0c0f61087c8fd5c70150c7f',1,'CFlat.Html.Base.Strings.HtmlParagraph._charMap'],['../classCFlat_1_1Html_1_1Base_1_1Strings_1_1HtmlString.html#a8ac6aa675c6269c2c0963a21ee6efbfa',1,'CFlat.Html.Base.Strings.HtmlString._charMap']]],
+  ['_5fcols_2',['_cols',['../classCFlat_1_1Html_1_1Data_1_1HtmlTable.html#a923b33ae2dcb68372b926f2e2b970358',1,'CFlat::Html::Data::HtmlTable']]],
+  ['_5fhead_3',['_head',['../classCFlat_1_1Html_1_1WebPage.html#afee9933f26757a07f8fac945b5e36589',1,'CFlat::Html::WebPage']]],
+  ['_5finstance_4',['_instance',['../classCFlat_1_1Receiver.html#a595042ca693e603e5c900bc73eeb0819',1,'CFlat::Receiver']]],
+  ['_5flistener_5',['_listener',['../classCFlat_1_1Receiver.html#aec3604ee5c241d7300206b08d12b3807',1,'CFlat::Receiver']]],
+  ['_5fmetas_6',['_metas',['../classCFlat_1_1Html_1_1Base_1_1HtmlHead.html#a2e1f860b14521b04d9b6f0c14d5bdc0b',1,'CFlat::Html::Base::HtmlHead']]],
+  ['_5fmethod_7',['_method',['../classCFlat_1_1Routing_1_1Route.html#a85e2087b9bc3fb91c3156ca632ca135f',1,'CFlat::Routing::Route']]],
+  ['_5fname_8',['_name',['../classCFlat_1_1Html_1_1WebPage.html#a7429f0bef79f46d601509e6f23d629ef',1,'CFlat::Html::WebPage']]],
+  ['_5fordering_9',['_ordering',['../classCFlat_1_1Html_1_1Collections_1_1HtmlList-1-g.html#a4c5c9d702b27c80d09bce08429b16921',1,'CFlat::Html::Collections::HtmlList-1-g']]],
+  ['_5fpage_10',['_page',['../classCFlat_1_1Routing_1_1Route.html#ab0286b078c2f1281ecb58520cafa7abc',1,'CFlat::Routing::Route']]],
+  ['_5fpath_11',['_path',['../classCFlat_1_1Routing_1_1Route.html#a848a41ca60dc5c80f323e59a666bb07d',1,'CFlat::Routing::Route']]],
+  ['_5froutes_12',['_routes',['../classCFlat_1_1Receiver.html#a880a2de593a9830846612b3ed0c54912',1,'CFlat::Receiver']]],
+  ['_5frows_13',['_rows',['../classCFlat_1_1Html_1_1Data_1_1HtmlTable.html#a093698de824521fc8d2d0750f5fdbf77',1,'CFlat::Html::Data::HtmlTable']]],
+  ['_5fspacebefore_14',['_spaceBefore',['../classCFlat_1_1Html_1_1Base_1_1Strings_1_1HtmlParagraph.html#ad09d43c3eb33d455d5467405d1a4ecb7',1,'CFlat.Html.Base.Strings.HtmlParagraph._spaceBefore'],['../classCFlat_1_1Html_1_1Base_1_1Strings_1_1HtmlString.html#a9ea8274c55911501b4716a62d542341b',1,'CFlat.Html.Base.Strings.HtmlString._spaceBefore']]],
+  ['_5fspacebetween_15',['_spaceBetween',['../classCFlat_1_1Html_1_1Base_1_1Strings_1_1HtmlParagraph.html#ae295ec44541fd57e898b6bce94a8e87e',1,'CFlat.Html.Base.Strings.HtmlParagraph._spaceBetween'],['../classCFlat_1_1Html_1_1Base_1_1Strings_1_1HtmlString.html#adcafc841e9cf3109b955e6c8e96f0eaa',1,'CFlat.Html.Base.Strings.HtmlString._spaceBetween']]],
+  ['_5fsrc_16',['_src',['../classCFlat_1_1Html_1_1IO_1_1HtmlEcmascript.html#a094a8e3e12854a833722eed596f0a7c7',1,'CFlat::Html::IO::HtmlEcmascript']]],
+  ['_5ftext_17',['_text',['../classCFlat_1_1Html_1_1Base_1_1Strings_1_1HtmlParagraph.html#a1429ad0ef8370402f93d2153cfd8e0d6',1,'CFlat.Html.Base.Strings.HtmlParagraph._text'],['../classCFlat_1_1Html_1_1Base_1_1Strings_1_1HtmlString.html#acf1ad786e9ecbfd21b9072cd4e0d8446',1,'CFlat.Html.Base.Strings.HtmlString._text']]],
+  ['_5ftitle_18',['_title',['../classCFlat_1_1Html_1_1Base_1_1HtmlHead.html#a8b2393ac3e610056c0bddbe09e62987b',1,'CFlat::Html::Base::HtmlHead']]]
 ];

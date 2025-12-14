@@ -12,7 +12,7 @@ public class WebPages : Test
 
         wp._children.Add(new HtmlList<string>(["foo", "bar", "bazz", "buzz"], Ordering.Unordered, new Attributes()));
         
-        Console.WriteLine(wp.Render());
+        Console.WriteLine(wp.RenderNoServer());
 
         return true;
     }

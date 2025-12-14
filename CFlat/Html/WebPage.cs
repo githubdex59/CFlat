@@ -1,4 +1,6 @@
+using System.Net.Sockets;
 using CFlat.Html.Base;
+using static CFlat.Receiver;
 
 namespace CFlat.Html;
 
@@ -7,9 +9,33 @@ namespace CFlat.Html;
 ///
 ///
 /// Populate the _head property with any data needed there(title is already set) and fill <paramref name="_children"/> with the page's contents.
+/// When making your own page by extending this class, do the following:
+/// - Name your class the path excluding slashes, after slashes capitalise the letter, e.g. <c>/foo/bar/bazz/buzz</c> => <c>FooBarBazzBuzz</c>
+/// - Make a constructor as follows:
+/// <code>
+/// public FooBar() : base(
+///     new List<HtmlElement>(),
+///     new Attributes(),
+///     "FooBar",
+///     new HtmlHead(new List<HtmlMeta>())
+///     )
+/// {
+///     ...
+/// }
+/// </code>
+///
+/// To manipulate the document refer to Document
 /// </summary>
 public class WebPage : Division
 {
+    protected string type = "text/html";
+    
+    /// <summary>
+    /// - Add(): adds a new element(s) to the page.
+    /// 
+    /// </summary>
+    [Obsolete("",true)]
+    private class Document {}
     
     /// <summary>
     /// Used to populate the <c>Title</c> element in <paramref name="_head"/>.
@@ -47,11 +73,33 @@ public class WebPage : Division
         _head._title = _name;
     }
 
-    protected WebPage() : base()
+    protected void Add(HtmlElement element)
     {
+        _children.Add(element);
     }
 
-    public new string Render()
+    protected void Add(IEnumerable<HtmlElement> elements)
+    {
+        _children.AddRange(elements);
+    }
+
+    protected void DealWithHeaders(ref NetworkStream stream, (Dictionary<string, string> headers, string rType) headers)
+    {
+        string[] rFirstLine = headers.rType.Split(" ");
+        string httpV = rFirstLine.LastOrDefault();
+        string contentType = headers.headers.GetValueOrDefault("Accept");
+        string encoding = headers.headers.GetValueOrDefault("Acept-Encoding");
+        
+        _instance.SendHeaders(httpV, 200, "OK", type
+            , encoding, 0, ref stream);
+
+    }
+
+    /// <summary>
+    /// DO NOT USE! TESTING PURPOSES ONLY!
+    /// </summary>
+    /// <returns>STUFF YOU SHOULDN'T USE IF UR NOT DOING IN THE Tests NAMESPACE!</returns>
+    public virtual string RenderNoServer()
     {
         string html = "<!DOCTYPE html>\n";
 
@@ -64,7 +112,9 @@ public class WebPage : Division
 
         html += $"<html{attr}>\n";
         
-        html += "<head>\n" + _head.Render() + "\n</head>\n";
+        html += "<head>\n" + _head.Render() +
+                $"\n<style>\n {_css} </style>\n"
+                + "\n</head>\n";
         
         html += "<body>\n";
         foreach (HtmlElement _child in _children)
@@ -77,4 +127,36 @@ public class WebPage : Division
 
         return html;
     }
+    public virtual string Render(ref NetworkStream stream, (Dictionary<string, string> headers, string rType) headers)
+    {
+        
+        DealWithHeaders(ref stream, headers);
+                
+        string html = "<!DOCTYPE html>\n";
+
+        string attr = "";
+
+        for (int i = 0; i < _attributes.Count; i++)
+        {
+            attr += $" {_attributes[i].Name}=\"{_attributes[i].Value}\"";
+        }
+
+        html += $"<html{attr}>\n";
+        
+        html += "<head>\n" + _head.Render(ref stream) +
+                           $"\n<style>\n {_css} </style>\n"
+            + "\n</head>\n";
+        
+        html += "<body>\n";
+        foreach (HtmlElement _child in _children)
+        {
+            html += _child.Render(ref stream);
+        }
+        html += "</body>\n";
+        
+        html += "</html>\n";
+
+        return html;
+    }
 }
+

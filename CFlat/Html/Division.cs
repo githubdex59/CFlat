@@ -1,3 +1,5 @@
+using System.Net.Sockets;
+
 namespace CFlat.Html;
 
 public class Division : HtmlElement
@@ -33,13 +35,7 @@ public class Division : HtmlElement
         _attributes = new Attributes();
         _css = "";
     }
-
-    protected Division()
-    {
-        
-    }
-
-    public string Render()
+    public string Render(ref NetworkStream stream)
     {
         string html = "";
 
@@ -54,11 +50,16 @@ public class Division : HtmlElement
 
         foreach (HtmlElement _child in _children)
         {
-            html += _child.Render();
+            html += _child.Render(ref stream);
         }
         
         html += "</div>\n";
 
         return html;
+    }
+
+    public string Render()
+    {
+        return "";
     }
 }

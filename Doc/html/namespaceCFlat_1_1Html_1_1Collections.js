@@ -1,5 +1,6 @@
 var namespaceCFlat_1_1Html_1_1Collections =
 [
+    [ "HtmlAside", "classCFlat_1_1Html_1_1Collections_1_1HtmlAside.html", "classCFlat_1_1Html_1_1Collections_1_1HtmlAside" ],
     [ "HtmlList&lt; T &gt;", "classCFlat_1_1Html_1_1Collections_1_1HtmlList-1-g.html", "classCFlat_1_1Html_1_1Collections_1_1HtmlList-1-g" ],
     [ "ListValue", "classCFlat_1_1Html_1_1Collections_1_1ListValue.html", null ],
     [ "Ordering", "namespaceCFlat_1_1Html_1_1Collections.html#aa43c293aa9a608578130e885676bfe51", [

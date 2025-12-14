@@ -25,6 +25,16 @@
 var NAVTREE =
 [
   [ "C Flat", "index.html", [
+    [ "README", "md_README.html", [
+      [ "C Flat", "md_README.html#autotoc_md0", [
+        [ "Features", "md_README.html#autotoc_md1", [
+          [ "Current", "md_README.html#autotoc_md2", null ],
+          [ "Planned", "md_README.html#autotoc_md3", null ]
+        ] ],
+        [ "License", "md_README.html#autotoc_md4", null ],
+        [ "Run Locally", "md_README.html#autotoc_md5", null ]
+      ] ]
+    ] ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -51,7 +61,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"Attributes_8cs.html"
+"Attributes_8cs.html",
+"classCFlat_1_1Html_1_1ElementAttribute.html#a19b958bb03f2e4b91c569716f2edaec7"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

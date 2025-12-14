@@ -6,3 +6,5 @@ test:
 build:
 	dotnet build CFlat/ -c $(BUILD_LEVEL)
 	
+docs:
+	doxygen

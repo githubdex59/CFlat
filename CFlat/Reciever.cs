@@ -1,6 +1,8 @@
 ﻿using System.Net;
+using System.Net.Http.Headers;
 using System.Net.Sockets;
 using System.Text;
+using CFlat.Html;
 using CFlat.Routing;
 
 namespace CFlat;
@@ -35,6 +37,7 @@ public class Receiver
     {
         if (_routes.Count == 0) throw new Exception("No routes found");
         
+        // \todo implement multithreading
         _listener.Start();
         Console.WriteLine($"Listening on {_listener.LocalEndpoint.ToString()}");
         Thread th = new Thread(new ThreadStart(StartListen));
@@ -48,29 +51,88 @@ public class Receiver
             TcpClient client = _listener.AcceptTcpClient();
             NetworkStream stream = client.GetStream();
             
-            SendHeaders("HTTP/1.1", 200, "OK", "text/html"
-                , "text/html", 0, ref stream);
-            string html = _routes[0]._page.Render();
-            stream.Write(Encoding.UTF8.GetBytes(html), 0, html.Length);
+            //read request 
+            byte[] requestBytes = new byte[1024];
+            int bytesRead = stream.Read(requestBytes, 0, requestBytes.Length);
+
+            string request = Encoding.UTF8.GetString(requestBytes, 0, bytesRead);
+            var headers = ParseHeaders(request);
+
+            string[] rFirstLine = headers.rType.Split(" ");
+            string httpV = rFirstLine.LastOrDefault();
+            string contentType = headers.headers.GetValueOrDefault("Accept");
+            string encoding = headers.headers.GetValueOrDefault("Acept-Encoding");
+
+            Method method;
+            if (!request.StartsWith("GET"))
+            {
+                SendHeaders(httpV, 405, "METHOD NOT ALLOWED", contentType
+                    , encoding, 0, ref stream);
+                client.Close();
+                continue;
+            }
+            else
+            {
+                method = Method.GET;
+            }
             
+            if (_routes.Contains(new Route(rFirstLine[1], method)))
+            {
+
+                try
+                {
+                    int index = _routes.IndexOf(new Route(rFirstLine[1], method));
+                    string html = _routes[index]._page.Render(ref stream, headers);
+                    stream.Write(Encoding.UTF8.GetBytes(html), 0, html.Length);
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e);
+                }
+            }
+            else
+            {
+                SendHeaders("HTTP/1.1", 404, "NOT FOUND", contentType
+                    , encoding, 0, ref stream);
+            }
             client.Close();
         }
     }
     
-    private void SendHeaders(string? httpVersion, int statusCode, string statusMsg, string? contentType, string? contentEncoding,
+    internal void SendHeaders(string? httpVersion, int statusCode, string statusMsg, string? contentType, string? contentEncoding,
         int byteLength, ref NetworkStream networkStream)
     {
         string responseHeaderBuffer = "";
-
-        responseHeaderBuffer = $"HTTP/1.1 {statusCode} {statusMsg}\r\n" +
+        
+        responseHeaderBuffer = $"{httpVersion ?? "HTTP/1.1"} {statusCode} {statusMsg}\r\n" +
                                $"Connection: Keep-Alive\r\n" +
                                $"Date: {DateTime.UtcNow.ToString()}\r\n" +
                                $"Server: CFlat \r\n" +
                                $"Content-Encoding: {contentEncoding}\r\n" +
-                               "X-Content-Type-Options: nosniff"+
+                               $"X-Clacks-Overhead \"GNU Terry Pratchett\"\n" +
+                               "X-Content-Type-Options: nosniff\n"+
                                $"Content-Type: {contentType ?? "text/plain"};v=b3\r\n\r\n";
 
         byte[] responseBytes = Encoding.UTF8.GetBytes(responseHeaderBuffer);
         networkStream.Write(responseBytes, 0, responseBytes.Length);
+    }
+
+    private (Dictionary<string, string> headers, string rType) ParseHeaders(string headerString)
+    {
+        var headerLines = headerString.Split("\r\n");
+        string firstLine = headerLines[0];
+        var headerValues = new Dictionary<string, string>();
+        foreach (var headerLine in headerLines)
+        {
+            var detail = headerLine.Trim();
+            var delimiter = detail.IndexOf(':');
+            if (delimiter >= 0)
+            {
+                var name = headerLine.Substring(0, delimiter).Trim();
+                var value = headerLine.Substring(delimiter + 1).Trim();
+                headerValues.Add(name, value);
+            }
+        }
+        return (headerValues, firstLine);
     }
 }

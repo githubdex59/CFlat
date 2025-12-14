@@ -1,3 +1,5 @@
+using System.Net.Sockets;
+
 namespace CFlat.Html.Base;
 
 /// <summary>
@@ -15,6 +17,11 @@ public class HtmlMeta : HtmlElement
     public List<HtmlElement> _children { get; set; }
     public string _css { get; set; }
     public Attributes _attributes { get; set; }
+    public string Render(ref NetworkStream stream)
+    {
+        return Render();
+    }
+
     public string Render()
     {
         return $"<meta{_attributes.GetAttributes()}>\n";

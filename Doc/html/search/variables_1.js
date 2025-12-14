@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['name_0',['Name',['../classCFlat_1_1Html_1_1ElementAttribute-1-g.html#a32b4328182bde926aab34e771901b400',1,'CFlat::Html::ElementAttribute-1-g']]]
+  ['headers_0',['headers',['../classCFlat_1_1Receiver.html#a052a33d5adfbe2ebd99564b57ed73606',1,'CFlat::Receiver']]]
 ];

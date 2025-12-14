@@ -100,7 +100,7 @@ Inheritance diagram for CFlat.Html.Collections.HtmlList&lt; T &gt;:</div>
  <div class="center">
   <img src="classCFlat_1_1Html_1_1Collections_1_1HtmlList-1-g.png" usemap="#CFlat_2EHtml_2ECollections_2EHtmlList_3C_20T_20_3E_map" alt=""/>
   <map id="CFlat_2EHtml_2ECollections_2EHtmlList_3C_20T_20_3E_map" name="CFlat_2EHtml_2ECollections_2EHtmlList_3C_20T_20_3E_map">
-<area href="interfaceCFlat_1_1Html_1_1HtmlElement.html" alt="CFlat.Html.HtmlElement" shape="rect" coords="224,0,438,24"/>
+<area href="interfaceCFlat_1_1Html_1_1HtmlElement.html" title="Use this to make custom elements." alt="CFlat.Html.HtmlElement" shape="rect" coords="224,0,438,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -110,7 +110,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1733b710d2a52afe8e52612cacaa9d5b" id="r_a1733b710d2a52afe8e52612cacaa9d5b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1733b710d2a52afe8e52612cacaa9d5b">HtmlList</a> (IEnumerable&lt; T &gt; collection, <a class="el" href="namespaceCFlat_1_1Html_1_1Collections.html#aa43c293aa9a608578130e885676bfe51">Ordering</a> ordering, <a class="el" href="classCFlat_1_1Html_1_1Attributes.html">Attributes</a> attributes)</td></tr>
 <tr class="memitem:acdd878d9be93e6bf990f21ca129d81f0" id="r_acdd878d9be93e6bf990f21ca129d81f0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acdd878d9be93e6bf990f21ca129d81f0">HtmlList</a> (int capacity, <a class="el" href="namespaceCFlat_1_1Html_1_1Collections.html#aa43c293aa9a608578130e885676bfe51">Ordering</a> ordering, <a class="el" href="classCFlat_1_1Html_1_1Attributes.html">Attributes</a> attributes)</td></tr>
 <tr class="memitem:a51bc75a12ef819a2c00aef2509814633" id="r_a51bc75a12ef819a2c00aef2509814633"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a51bc75a12ef819a2c00aef2509814633">Render</a> ()</td></tr>
-<tr class="memdesc:a51bc75a12ef819a2c00aef2509814633"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to generate HTML to be returned via the receiver.  <br /></td></tr>
+<tr class="memitem:a12c451bb70daf67dc27a5c2a2d53f8e4" id="r_a12c451bb70daf67dc27a5c2a2d53f8e4"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a12c451bb70daf67dc27a5c2a2d53f8e4">Render</a> (ref NetworkStream stream)</td></tr>
+<tr class="memdesc:a12c451bb70daf67dc27a5c2a2d53f8e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to generate HTML to be returned via the receiver.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -231,7 +232,7 @@ Properties</h2></td></tr>
 </div>
 </div>
 <a id="a51bc75a12ef819a2c00aef2509814633" name="a51bc75a12ef819a2c00aef2509814633"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a51bc75a12ef819a2c00aef2509814633">&#9670;&#160;</a></span>Render()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a51bc75a12ef819a2c00aef2509814633">&#9670;&#160;</a></span>Render() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -253,10 +254,37 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Implements <a class="el" href="interfaceCFlat_1_1Html_1_1HtmlElement.html#ab75929e7784e5c242f08b08430151334">CFlat.Html.HtmlElement</a>.</p>
+
+</div>
+</div>
+<a id="a12c451bb70daf67dc27a5c2a2d53f8e4" name="a12c451bb70daf67dc27a5c2a2d53f8e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12c451bb70daf67dc27a5c2a2d53f8e4">&#9670;&#160;</a></span>Render() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string CFlat.Html.Collections.HtmlList&lt; T &gt;.Render </td>
+          <td>(</td>
+          <td class="paramtype">ref NetworkStream</td>          <td class="paramname"><span class="paramname"><em>stream</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
 <p>Used to generate HTML to be returned via the receiver. </p>
 <dl class="section return"><dt>Returns</dt><dd>Generated HTML code</dd></dl>
 
-<p>Implements <a class="el" href="interfaceCFlat_1_1Html_1_1HtmlElement.html#ab75929e7784e5c242f08b08430151334">CFlat.Html.HtmlElement</a>.</p>
+<p>Implements <a class="el" href="interfaceCFlat_1_1Html_1_1HtmlElement.html#acd9ca3d5f7f1c064d8a313b133cf4b55">CFlat.Html.HtmlElement</a>.</p>
 
 </div>
 </div>

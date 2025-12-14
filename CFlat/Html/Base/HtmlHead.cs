@@ -1,3 +1,5 @@
+using System.Net.Sockets;
+
 namespace CFlat.Html.Base;
 
 /// <summary>
@@ -94,17 +96,22 @@ public class HtmlHead : HtmlElement
     /// Represents the `title` tag's content
     /// </summary>
     public string _title;
-    public string Render()
+    public string Render(ref NetworkStream stream)
     {
         string html = "";
 
         foreach (HtmlMeta meta in _metas)
         {
-            html += $"\t{meta.Render()}";
+            html += $"\t{meta.Render(ref stream)}";
         }
 
         html += $"\t<title>{_title}</title>\n";
         
         return html;
+    }
+
+    public string Render()
+    {
+        return "";
     }
 }
