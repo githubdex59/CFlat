@@ -58,6 +58,7 @@ public class Receiver
             string request = Encoding.UTF8.GetString(requestBytes, 0, bytesRead);
             var headers = ParseHeaders(request);
 
+            Console.WriteLine(request);
             string[] rFirstLine = headers.rType.Split(" ");
             string httpV = rFirstLine.LastOrDefault();
             string contentType = headers.headers.GetValueOrDefault("Accept");
@@ -83,7 +84,7 @@ public class Receiver
                 {
                     int index = _routes.IndexOf(new Route(rFirstLine[1], method));
                     string html = _routes[index]._page.Render(ref stream, headers);
-                    stream.Write(Encoding.UTF8.GetBytes(html), 0, html.Length);
+                    stream.Write(Encoding.ASCII.GetBytes(html), 0, html.Length);
                 }
                 catch (Exception e)
                 {
@@ -113,7 +114,9 @@ public class Receiver
                                "X-Content-Type-Options: nosniff\n"+
                                $"Content-Type: {contentType ?? "text/plain"};v=b3\r\n\r\n";
 
+        Console.WriteLine(responseHeaderBuffer);
         byte[] responseBytes = Encoding.UTF8.GetBytes(responseHeaderBuffer);
+        
         networkStream.Write(responseBytes, 0, responseBytes.Length);
     }
 

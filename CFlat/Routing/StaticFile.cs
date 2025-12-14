@@ -13,9 +13,9 @@ public class StaticFile : Route
         protected string GetContent()
         {
             string lPath = $"{path}{_name}";
-            Console.WriteLine(path);
-            Console.WriteLine(lPath);
+            //Console.WriteLine(lPath);
 
+            if (System.IO.File.Exists(lPath))
                     return System.IO.File.ReadAllText(lPath);
             return "";
         }
@@ -29,8 +29,24 @@ public class StaticFile : Route
 
         public override string Render(ref NetworkStream stream, (Dictionary<string, string> headers, string rType) headers)
         {
+            if (_type != "text/html") _type = "text/html";
+            
+            string[] rFirstLine = headers.rType.Split(" ");
+            _name = rFirstLine[1];
+            string type;
+            if (headers.headers.TryGetValue("Accept", out type))
+            {
+                if (!type.StartsWith("text/html"))  _type = type;
+                if (type == "*/*") _type = rFirstLine[1].Split('.').Last() switch
+                {
+                    "js" => "text/javascript",
+                    _ => "text/plain"
+                };
+            }
+            
             DealWithHeaders(ref stream, headers);
             
+
             string content = GetContent();
             return content;
         }

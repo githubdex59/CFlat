@@ -28,7 +28,7 @@ namespace CFlat.Html;
 /// </summary>
 public class WebPage : Division
 {
-    protected string type = "text/html";
+    protected string _type = "text/html";
     
     /// <summary>
     /// - Add(): adds a new element(s) to the page.
@@ -90,7 +90,7 @@ public class WebPage : Division
         string contentType = headers.headers.GetValueOrDefault("Accept");
         string encoding = headers.headers.GetValueOrDefault("Acept-Encoding");
         
-        _instance.SendHeaders(httpV, 200, "OK", type
+        _instance.SendHeaders(httpV, 200, "OK", _type
             , encoding, 0, ref stream);
 
     }

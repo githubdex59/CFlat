@@ -1,3 +1,4 @@
+using System.Text.RegularExpressions;
 using CFlat.Html;
 
 namespace CFlat.Routing;
@@ -53,7 +54,8 @@ public class Route : IEquatable<Route>
     {
         if (other is null) return false;
         if (ReferenceEquals(this, other)) return true;
-        return _path == other._path && _method == other._method;
+        
+        return Regex.IsMatch(other._path, _path) && _method == other._method;
     }
 
     public override bool Equals(object? obj)
