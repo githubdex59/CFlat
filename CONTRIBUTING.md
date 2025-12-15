@@ -14,4 +14,4 @@ I'm happy to accept any contributions as long as they follow the contribution ru
 - When commiting, run `make prepare_for_commit`
 
 # Recommendations:
-- Build and run the provided docker image with the `-p 8080:8080` option
+- Build and run the provided docker image with the `-p 8080:8080` option, this will run the docs on a web server
