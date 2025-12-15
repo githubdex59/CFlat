@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['none_0',['None',['../namespaceCFlat_1_1Html_1_1Css.html#abb7acb2b1d529dbdfd3e604a5f6516eda6adf97f83acf6453d4a6a4b1070f3754',1,'CFlat::Html::Css']]]
+  ['menu_0',['Menu',['../namespaceCFlat_1_1Html_1_1Collections.html#aa43c293aa9a608578130e885676bfe51ab61541208db7fa7dba42c85224405911',1,'CFlat::Html::Collections']]]
 ];

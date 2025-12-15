@@ -3,6 +3,9 @@ var annotated_dup =
     [ "CFlat", "namespaceCFlat.html", [
       [ "Html", "namespaceCFlat_1_1Html.html", [
         [ "Base", "namespaceCFlat_1_1Html_1_1Base.html", [
+          [ "Heading", "namespaceCFlat_1_1Html_1_1Base_1_1Heading.html", [
+            [ "HtmlHeader", "classCFlat_1_1Html_1_1Base_1_1Heading_1_1HtmlHeader.html", "classCFlat_1_1Html_1_1Base_1_1Heading_1_1HtmlHeader" ]
+          ] ],
           [ "Strings", "namespaceCFlat_1_1Html_1_1Base_1_1Strings.html", [
             [ "HtmlLink", "classCFlat_1_1Html_1_1Base_1_1Strings_1_1HtmlLink.html", "classCFlat_1_1Html_1_1Base_1_1Strings_1_1HtmlLink" ],
             [ "HtmlParagraph", "classCFlat_1_1Html_1_1Base_1_1Strings_1_1HtmlParagraph.html", "classCFlat_1_1Html_1_1Base_1_1Strings_1_1HtmlParagraph" ],

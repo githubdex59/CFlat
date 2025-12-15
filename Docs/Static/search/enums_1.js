@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ordering_0',['Ordering',['../namespaceCFlat_1_1Html_1_1Collections.html#aa43c293aa9a608578130e885676bfe51',1,'CFlat::Html::Collections']]]
+  ['method_0',['Method',['../namespaceCFlat_1_1Routing.html#a4d8bb0783e09f9ab3fc1f9f21bc348a6',1,'CFlat::Routing']]]
 ];

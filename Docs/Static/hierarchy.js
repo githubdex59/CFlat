@@ -12,6 +12,7 @@ var hierarchy =
       [ "CFlat.Html.InvalidHtmlException", "classCFlat_1_1Html_1_1InvalidHtmlException.html", null ]
     ] ],
     [ "CFlat.Html.HtmlElement", "interfaceCFlat_1_1Html_1_1HtmlElement.html", [
+      [ "CFlat.Html.Base.Heading.HtmlHeader", "classCFlat_1_1Html_1_1Base_1_1Heading_1_1HtmlHeader.html", null ],
       [ "CFlat.Html.Base.HtmlHead", "classCFlat_1_1Html_1_1Base_1_1HtmlHead.html", null ],
       [ "CFlat.Html.Base.HtmlMeta", "classCFlat_1_1Html_1_1Base_1_1HtmlMeta.html", null ],
       [ "CFlat.Html.Base.Strings.HtmlLink", "classCFlat_1_1Html_1_1Base_1_1Strings_1_1HtmlLink.html", null ],

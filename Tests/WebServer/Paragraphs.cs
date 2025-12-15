@@ -1,5 +1,6 @@
 using CFlat.Html;
 using CFlat.Html.Base;
+using CFlat.Html.Base.Heading;
 using CFlat.Html.Base.Strings;
 using CFlat.Html.Collections;
 using CFlat.Html.Css;
@@ -25,7 +26,7 @@ public class Paragraphs : WebPage
             "  margin: 0.5rem;\n" +
             "}\n" +
             "";
-        
+        Add(new HtmlHeader(HeaderLevel.h1, "Hello, World!"));
         Add(new HtmlAside(new List<HtmlElement>([
             new HtmlParagraph("This is a quote from the popular film Star Wars: The Revenge of the Sith")
         ])));
