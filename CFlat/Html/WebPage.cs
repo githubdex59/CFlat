@@ -1,5 +1,6 @@
 using System.Net.Sockets;
 using CFlat.Html.Base;
+using CFlat.Html.Css;
 using static CFlat.Receiver;
 
 namespace CFlat.Html;
@@ -137,6 +138,11 @@ public class WebPage : Division
         html += "</html>\n";
 
         return html;
+    }
+
+    protected void AddBreak()
+    {
+        _children.Add(new HtmlNewline(""));
     }
     
     /// <summary>

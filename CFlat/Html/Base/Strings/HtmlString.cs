@@ -36,6 +36,10 @@ public class HtmlString : HtmlElement
     public Attributes _attributes { get; set; }
     public string Render(ref NetworkStream stream)
     {
+        return Render();
+    }
+    public string Render()
+    {
         string finalString = "";
 
         foreach (char c in _text.ToCharArray())
@@ -45,9 +49,5 @@ public class HtmlString : HtmlElement
         }
         
         return finalString;
-    }
-    public string Render()
-    {
-        return "";
     }
 }

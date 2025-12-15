@@ -4,6 +4,7 @@ var annotated_dup =
       [ "Html", "namespaceCFlat_1_1Html.html", [
         [ "Base", "namespaceCFlat_1_1Html_1_1Base.html", [
           [ "Strings", "namespaceCFlat_1_1Html_1_1Base_1_1Strings.html", [
+            [ "HtmlLink", "classCFlat_1_1Html_1_1Base_1_1Strings_1_1HtmlLink.html", "classCFlat_1_1Html_1_1Base_1_1Strings_1_1HtmlLink" ],
             [ "HtmlParagraph", "classCFlat_1_1Html_1_1Base_1_1Strings_1_1HtmlParagraph.html", "classCFlat_1_1Html_1_1Base_1_1Strings_1_1HtmlParagraph" ],
             [ "HtmlString", "classCFlat_1_1Html_1_1Base_1_1Strings_1_1HtmlString.html", "classCFlat_1_1Html_1_1Base_1_1Strings_1_1HtmlString" ]
           ] ],
@@ -23,6 +24,9 @@ var annotated_dup =
             [ "Cookie", "classCFlat_1_1Html_1_1IO_1_1EcmaScript_1_1Cookie.html", "classCFlat_1_1Html_1_1IO_1_1EcmaScript_1_1Cookie" ]
           ] ],
           [ "HtmlEcmascript", "classCFlat_1_1Html_1_1IO_1_1HtmlEcmascript.html", "classCFlat_1_1Html_1_1IO_1_1HtmlEcmascript" ]
+        ] ],
+        [ "Css", "namespaceCFlat_1_1Html_1_1Css.html", [
+          [ "HtmlNewline", "classCFlat_1_1Html_1_1Css_1_1HtmlNewline.html", "classCFlat_1_1Html_1_1Css_1_1HtmlNewline" ]
         ] ],
         [ "Attributes&lt; T &gt;", "classCFlat_1_1Html_1_1Attributes-1-g.html", "classCFlat_1_1Html_1_1Attributes-1-g" ],
         [ "Attributes", "classCFlat_1_1Html_1_1Attributes.html", "classCFlat_1_1Html_1_1Attributes" ],
@@ -47,6 +51,7 @@ var annotated_dup =
     [ "Tests", "namespaceTests.html", [
       [ "WebServer", "namespaceTests_1_1WebServer.html", [
         [ "EcmaScript", "classTests_1_1WebServer_1_1EcmaScript.html", "classTests_1_1WebServer_1_1EcmaScript" ],
+        [ "Links", "classTests_1_1WebServer_1_1Links.html", "classTests_1_1WebServer_1_1Links" ],
         [ "Paragraphs", "classTests_1_1WebServer_1_1Paragraphs.html", "classTests_1_1WebServer_1_1Paragraphs" ],
         [ "Root", "classTests_1_1WebServer_1_1Root.html", "classTests_1_1WebServer_1_1Root" ],
         [ "Table", "classTests_1_1WebServer_1_1Table.html", "classTests_1_1WebServer_1_1Table" ],

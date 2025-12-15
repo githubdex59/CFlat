@@ -41,9 +41,12 @@ public class HtmlAside : HtmlElement
         };
         
         string html = $"<aside style=\"{_css}\">\n";
-        foreach (HtmlElement child in _children)
+        if (_children.Count > 0)
         {
-            html += child.Render(ref stream);
+            foreach (HtmlElement child in _children)
+            {
+                html += child.Render(ref stream);
+            }
         }
         html += "</aside>\n";
         return html;

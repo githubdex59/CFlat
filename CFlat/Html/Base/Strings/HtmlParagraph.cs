@@ -55,18 +55,15 @@ public class HtmlParagraph : HtmlElement
     /// <param name="css">The inline CSS</param>
     /// <param name="spaceBetween">The space between the previous element and this</param>
     /// <param name="spaceBefore">The space before the next element and this</param>
-    public HtmlParagraph(string text, string css = "", Sizing spaceBetween = Sizing.None, Sizing spaceBefore = Sizing.None)
+    public HtmlParagraph(string text, string css = "", Sizing spaceBetween = Sizing.None, Sizing spaceBefore = Sizing.None, Attributes attributes = null)
     {
         _text = text;
         _spaceBetween = spaceBetween;
         _spaceBefore = spaceBefore;
         _css = css;
+        _attributes = attributes ?? new Attributes();
     }
     public string Render()
-    {
-        return "";
-    }
-    public string Render(ref NetworkStream stream)
     {
         string html = "";
         string finalString = "";
@@ -95,5 +92,9 @@ public class HtmlParagraph : HtmlElement
         html += $"<p style=\"margin-bottom: {mBottom}; margin-top: {mTop}; {_css}\" {_attributes.GetAttributes()}>{finalString}</p>\n";
         
         return html;
+    }
+    public string Render(ref NetworkStream stream)
+    {
+        return Render();
     }
 }

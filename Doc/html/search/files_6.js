@@ -4,9 +4,11 @@ var searchData=
   ['htmlecmascript_2ecs_1',['HtmlEcmascript.cs',['../HtmlEcmascript_8cs.html',1,'']]],
   ['htmlelement_2ecs_2',['HtmlElement.cs',['../HtmlElement_8cs.html',1,'']]],
   ['htmlhead_2ecs_3',['HtmlHead.cs',['../HtmlHead_8cs.html',1,'']]],
-  ['htmllist_2ecs_4',['HtmlList.cs',['../HtmlList_8cs.html',1,'']]],
-  ['htmlmeta_2ecs_5',['HtmlMeta.cs',['../HtmlMeta_8cs.html',1,'']]],
-  ['htmlparagraph_2ecs_6',['HtmlParagraph.cs',['../HtmlParagraph_8cs.html',1,'']]],
-  ['htmlstring_2ecs_7',['HtmlString.cs',['../HtmlString_8cs.html',1,'']]],
-  ['htmltable_2ecs_8',['HtmlTable.cs',['../HtmlTable_8cs.html',1,'']]]
+  ['htmllink_2ecs_4',['HtmlLink.cs',['../HtmlLink_8cs.html',1,'']]],
+  ['htmllist_2ecs_5',['HtmlList.cs',['../HtmlList_8cs.html',1,'']]],
+  ['htmlmeta_2ecs_6',['HtmlMeta.cs',['../HtmlMeta_8cs.html',1,'']]],
+  ['htmlnewline_2ecs_7',['HtmlNewline.cs',['../HtmlNewline_8cs.html',1,'']]],
+  ['htmlparagraph_2ecs_8',['HtmlParagraph.cs',['../HtmlParagraph_8cs.html',1,'']]],
+  ['htmlstring_2ecs_9',['HtmlString.cs',['../HtmlString_8cs.html',1,'']]],
+  ['htmltable_2ecs_10',['HtmlTable.cs',['../HtmlTable_8cs.html',1,'']]]
 ];
