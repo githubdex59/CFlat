@@ -28,6 +28,9 @@ namespace CFlat.Html;
 /// </summary>
 public class WebPage : Division
 {
+    /// <summary>
+    /// The value of the `Content-Type` header in the response
+    /// </summary>
     protected string _type = "text/html";
     
     /// <summary>
@@ -73,11 +76,19 @@ public class WebPage : Division
         _head._title = _name;
     }
 
+    /// <summary>
+    /// Add a new element to the page
+    /// </summary>
+    /// <param name="element"><example>new HtmlParagraph("Hello, World!")</example></param>
     protected void Add(HtmlElement element)
     {
         _children.Add(element);
     }
 
+    /// <summary>
+    /// Add an IEnumerable of elements to the page
+    /// </summary>
+    /// <param name="elements"><example>[new HtmlParagraph("Hello, World!"), new HtmlFoo("Bar")]</example></param>
     protected void Add(IEnumerable<HtmlElement> elements)
     {
         _children.AddRange(elements);
@@ -127,6 +138,13 @@ public class WebPage : Division
 
         return html;
     }
+    
+    /// <summary>
+    /// Generates the html for any given web page by rendering all child elements.
+    /// </summary>
+    /// <param name="stream">The NetworkStream(Set by Reciever)</param>
+    /// <param name="headers">The request headers(Set by Reciever)</param>
+    /// <returns>A string containing html rendered from the page</returns>
     public virtual string Render(ref NetworkStream stream, (Dictionary<string, string> headers, string rType) headers)
     {
         

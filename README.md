@@ -11,12 +11,13 @@ A Web framework written in C#.
 
 ### Current
 - Http server that routes and renders your code
-- A boat load of classes
-
-### Planned
 - Cookie support
 - Javascript
-- CSS
+- CSS(manual)
+
+### Planned
+- CSS(generated)
+- More premade Javascript scripts 
 
 ## License
 
@@ -28,7 +29,7 @@ This project is licensed under the [MPL-2.0](https://choosealicense.com/licenses
 
 Clone the project:
 ```bash
-git clone https://github.com/githubdex59/cflat.git
+git clone https://github.com/githubdex59/CFlat.git
 ```
 Change directories into it:
 ```bash

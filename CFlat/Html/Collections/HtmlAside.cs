@@ -2,8 +2,22 @@ using System.Net.Sockets;
 
 namespace CFlat.Html.Collections;
 
+/// <summary>
+/// Represents the `aside` tag. Acts similar to HtmlDivision.
+/// </summary>
 public class HtmlAside : HtmlElement
 {
+    /// <summary>
+    /// <example>
+    /// new HtmlAside(new List<HtmlElement>([
+    ///     new HtmlParagraph("Foo"),
+    ///     new HtmlParagraph("Bar"),
+    /// ]);
+    /// </example>
+    /// </summary>
+    /// <param name="children"></param>
+    /// <param name="css"></param>
+    /// <param name="attributes"></param>
     public HtmlAside(List<HtmlElement> children, string css = "", Attributes attributes = null)
     {
         _children = children;

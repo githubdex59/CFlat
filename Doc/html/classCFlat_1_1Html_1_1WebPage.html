@@ -123,6 +123,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1b041568ef8bf88bd5758a7008bdab37" id="r_a1b041568ef8bf88bd5758a7008bdab37"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1b041568ef8bf88bd5758a7008bdab37">RenderNoServer</a> ()</td></tr>
 <tr class="memdesc:a1b041568ef8bf88bd5758a7008bdab37"><td class="mdescLeft">&#160;</td><td class="mdescRight">DO NOT USE! TESTING PURPOSES ONLY!  <br /></td></tr>
 <tr class="memitem:ac05fa38bb4f9032d4858f19a06406561" id="r_ac05fa38bb4f9032d4858f19a06406561"><td class="memItemLeft" align="right" valign="top">virtual string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac05fa38bb4f9032d4858f19a06406561">Render</a> (ref NetworkStream stream,(Dictionary&lt; string, string &gt; headers, string rType) headers)</td></tr>
+<tr class="memdesc:ac05fa38bb4f9032d4858f19a06406561"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates the html for any given web page by rendering all child elements.  <br /></td></tr>
 <tr class="inherit_header pub_methods_classCFlat_1_1Html_1_1Division"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classCFlat_1_1Html_1_1Division')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Member Functions inherited from <a class="el" href="classCFlat_1_1Html_1_1Division.html">CFlat.Html.Division</a></td></tr>
 <tr class="memitem:a785daac2d0e5d22aa8e923229f338904 inherit pub_methods_classCFlat_1_1Html_1_1Division" id="r_a785daac2d0e5d22aa8e923229f338904"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCFlat_1_1Html_1_1Division.html#a785daac2d0e5d22aa8e923229f338904">Division</a> (List&lt; <a class="el" href="interfaceCFlat_1_1Html_1_1HtmlElement.html">HtmlElement</a> &gt; children, string css, <a class="el" href="classCFlat_1_1Html_1_1Attributes.html">Attributes</a> attributes)</td></tr>
 <tr class="memitem:a364d13527f9762d74c06c18ec013d502 inherit pub_methods_classCFlat_1_1Html_1_1Division" id="r_a364d13527f9762d74c06c18ec013d502"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCFlat_1_1Html_1_1Division.html#a364d13527f9762d74c06c18ec013d502">Division</a> (List&lt; <a class="el" href="interfaceCFlat_1_1Html_1_1HtmlElement.html">HtmlElement</a> &gt; children, string css)</td></tr>
@@ -142,12 +143,15 @@ Public Attributes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 id="header-pro-methods" class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:ac776a6f73f578d1a31687b9dbe8820f3" id="r_ac776a6f73f578d1a31687b9dbe8820f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac776a6f73f578d1a31687b9dbe8820f3">Add</a> (<a class="el" href="interfaceCFlat_1_1Html_1_1HtmlElement.html">HtmlElement</a> element)</td></tr>
+<tr class="memdesc:ac776a6f73f578d1a31687b9dbe8820f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new element to the page.  <br /></td></tr>
 <tr class="memitem:aa28d82a6d401717ec5fb6ac25684c9f2" id="r_aa28d82a6d401717ec5fb6ac25684c9f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa28d82a6d401717ec5fb6ac25684c9f2">Add</a> (IEnumerable&lt; <a class="el" href="interfaceCFlat_1_1Html_1_1HtmlElement.html">HtmlElement</a> &gt; elements)</td></tr>
+<tr class="memdesc:aa28d82a6d401717ec5fb6ac25684c9f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an IEnumerable of elements to the page.  <br /></td></tr>
 <tr class="memitem:ae84ac857e76cffcbe9cbe77408292b00" id="r_ae84ac857e76cffcbe9cbe77408292b00"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae84ac857e76cffcbe9cbe77408292b00">DealWithHeaders</a> (ref NetworkStream stream,(Dictionary&lt; string, string &gt; headers, string rType) headers)</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pro-attribs" class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a493a319beb7f5992377ae8a0ddac1f72" id="r_a493a319beb7f5992377ae8a0ddac1f72"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a493a319beb7f5992377ae8a0ddac1f72">_type</a> = &quot;text/html&quot;</td></tr>
+<tr class="memdesc:a493a319beb7f5992377ae8a0ddac1f72"><td class="mdescLeft">&#160;</td><td class="mdescRight">The value of the <span class="tt">Content-Type</span> header in the response.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-inherited" class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -357,6 +361,14 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Add a new element to the page. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">element</td><td>new HtmlParagraph("Hello, World!")</td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="aa28d82a6d401717ec5fb6ac25684c9f2" name="aa28d82a6d401717ec5fb6ac25684c9f2"></a>
@@ -381,6 +393,14 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Add an IEnumerable of elements to the page. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">elements</td><td>[new HtmlParagraph("Hello, World!"), new HtmlFoo("Bar")]</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -439,6 +459,16 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Generates the html for any given web page by rendering all child elements. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stream</td><td>The NetworkStream(Set by Reciever)</td></tr>
+    <tr><td class="paramname">headers</td><td>The request headers(Set by Reciever)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A string containing html rendered from the page</dd></dl>
 
 <p>Reimplemented in <a class="el" href="classCFlat_1_1Routing_1_1StaticFile_1_1File.html#aaa9cc4b4385d3b005d3942801669ed13">CFlat.Routing.StaticFile.File</a>.</p>
 
@@ -524,6 +554,8 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>The value of the <span class="tt">Content-Type</span> header in the response. </p>
 
 </div>
 </div>

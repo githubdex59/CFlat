@@ -4,6 +4,9 @@ using CFlat.Html.Base;
 
 namespace CFlat.Routing;
 
+/// <summary>
+/// Use to serve static files(e.g. /Static/stylesheet.css)
+/// </summary>
 public class StaticFile : Route
 {
     public class File : WebPage
@@ -40,7 +43,6 @@ public class StaticFile : Route
                 if (type == "*/*") _type = rFirstLine[1].Split('.').Last() switch
                 {
                     "js" => "text/javascript",
-                    "png"  => "image/png",
                     _ => "text/plain"
                 };
             }
@@ -52,6 +54,10 @@ public class StaticFile : Route
             return content;
         }
     }
+    /// <summary>
+    /// Make a new StaticFile route
+    /// </summary>
+    /// <param name="path">The path of the static file relative to the Static directory</param>
     public StaticFile(string path) : base(path, new File(path), Method.GET)
     {
     }

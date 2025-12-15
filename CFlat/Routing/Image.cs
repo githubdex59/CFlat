@@ -4,6 +4,11 @@ using static CFlat.Receiver;
 
 namespace CFlat.Routing;
 
+/// <summary>
+/// Loads an image from disk.
+///
+/// <example>new Image("[\\w-]+\\.(?i:png)</example>
+/// </summary>
 public class Image : ByteItem
 {
     protected string path = "./Static";
@@ -19,15 +24,24 @@ public class Image : ByteItem
     }
         
 
-   
+   /// <summary>
+   /// The image name
+   /// </summary>
     protected string _path;
+   /// <summary>
+   /// Defaults to image/png
+   /// </summary>
     protected string _type;
     public Image(string path, string type = "image/png") : base(path)
     {
         _path = path;
         _type = type;
     }
-    
+    /// <summary>
+    /// Sends headers
+    /// </summary>
+    /// <param name="stream">The NetworkStream(Set by Reciever)</param>
+    /// <param name="headers">The request headers(Set by Reciever)</param>
     protected void DealWithHeaders(ref NetworkStream stream, (Dictionary<string, string> headers, string rType) headers)
     {
         string[] rFirstLine = headers.rType.Split(" ");

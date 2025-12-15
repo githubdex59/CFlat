@@ -3,6 +3,9 @@ using System.Text.RegularExpressions;
 
 namespace CFlat.Routing;
 
+/// <summary>
+/// Used to represent a non-text static file
+/// </summary>
 public class ByteItem : IEquatable<ByteItem>
 {
     protected ByteItem()

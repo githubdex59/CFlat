@@ -91,13 +91,16 @@ $(function(){initNavTree('classCFlat_1_1Routing_1_1Image.html','','classCFlat_1_
   <div class="headertitle"><div class="title">CFlat.Routing.Image Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Loads an image from disk.  
+ <a href="#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for CFlat.Routing.Image:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="classCFlat_1_1Routing_1_1Image.png" usemap="#CFlat_2ERouting_2EImage_map" alt=""/>
   <map id="CFlat_2ERouting_2EImage_map" name="CFlat_2ERouting_2EImage_map">
-<area href="classCFlat_1_1Routing_1_1ByteItem.html" alt="CFlat.Routing.ByteItem" shape="rect" coords="0,56,139,80"/>
+<area href="classCFlat_1_1Routing_1_1ByteItem.html" title="Used to represent a non-text static file." alt="CFlat.Routing.ByteItem" shape="rect" coords="0,56,139,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -115,6 +118,7 @@ Public Member Functions</h2></td></tr>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:aa3403c8f81c9bdc1c9699796d62ffcfc" id="r_aa3403c8f81c9bdc1c9699796d62ffcfc"><td class="memItemLeft" align="right" valign="top">byte[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa3403c8f81c9bdc1c9699796d62ffcfc">GetContent</a> ()</td></tr>
 <tr class="memitem:a17c68ee5b60b53176248a5174e166f53" id="r_a17c68ee5b60b53176248a5174e166f53"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a17c68ee5b60b53176248a5174e166f53">DealWithHeaders</a> (ref NetworkStream stream,(Dictionary&lt; string, string &gt; headers, string rType) headers)</td></tr>
+<tr class="memdesc:a17c68ee5b60b53176248a5174e166f53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends headers.  <br /></td></tr>
 <tr class="inherit_header pro_methods_classCFlat_1_1Routing_1_1ByteItem"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_classCFlat_1_1Routing_1_1ByteItem')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Protected Member Functions inherited from <a class="el" href="classCFlat_1_1Routing_1_1ByteItem.html">CFlat.Routing.ByteItem</a></td></tr>
 <tr class="memitem:a77b97eb937ee3d3d300421351419fad6 inherit pro_methods_classCFlat_1_1Routing_1_1ByteItem" id="r_a77b97eb937ee3d3d300421351419fad6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCFlat_1_1Routing_1_1ByteItem.html#a77b97eb937ee3d3d300421351419fad6">ByteItem</a> ()</td></tr>
 </table><table class="memberdecls">
@@ -122,7 +126,9 @@ Protected Member Functions</h2></td></tr>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a4659306d942555b13a3a5bab18868f3b" id="r_a4659306d942555b13a3a5bab18868f3b"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4659306d942555b13a3a5bab18868f3b">path</a> = &quot;./Static&quot;</td></tr>
 <tr class="memitem:a976bba95018e17598472e3750deff54c" id="r_a976bba95018e17598472e3750deff54c"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a976bba95018e17598472e3750deff54c">_path</a></td></tr>
+<tr class="memdesc:a976bba95018e17598472e3750deff54c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The image name.  <br /></td></tr>
 <tr class="memitem:af1188ba6bd50e796864d50fd6346e2ce" id="r_af1188ba6bd50e796864d50fd6346e2ce"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af1188ba6bd50e796864d50fd6346e2ce">_type</a></td></tr>
+<tr class="memdesc:af1188ba6bd50e796864d50fd6346e2ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defaults to image/png.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-inherited" class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -132,7 +138,10 @@ Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pac_attribs_classCFlat_1_1Routing_1_1ByteItem"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pac_attribs_classCFlat_1_1Routing_1_1ByteItem')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Package Attributes inherited from <a class="el" href="classCFlat_1_1Routing_1_1ByteItem.html">CFlat.Routing.ByteItem</a></td></tr>
 <tr class="memitem:a719d6253dd853464b2aed0e995aae8c8 inherit pac_attribs_classCFlat_1_1Routing_1_1ByteItem" id="r_a719d6253dd853464b2aed0e995aae8c8"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCFlat_1_1Routing_1_1ByteItem.html#a719d6253dd853464b2aed0e995aae8c8">_path</a></td></tr>
 </table>
-<a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Loads an image from disk. </p>
+<p>new <a class="el" href="classCFlat_1_1Routing_1_1Image.html" title="Loads an image from disk.">Image</a>("[\w-]+\.(?i:png)</p>
+</div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a5cbb42d99f4ee2f9e75d6638712c6e3b" name="a5cbb42d99f4ee2f9e75d6638712c6e3b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5cbb42d99f4ee2f9e75d6638712c6e3b">&#9670;&#160;</a></span>Image()</h2>
 
@@ -189,6 +198,15 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Sends headers. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stream</td><td>The NetworkStream(Set by Reciever)</td></tr>
+    <tr><td class="paramname">headers</td><td>The request headers(Set by Reciever)</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -346,6 +364,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>The image name. </p>
+
 </div>
 </div>
 <a id="af1188ba6bd50e796864d50fd6346e2ce" name="af1188ba6bd50e796864d50fd6346e2ce"></a>
@@ -367,6 +387,8 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Defaults to image/png. </p>
 
 </div>
 </div>

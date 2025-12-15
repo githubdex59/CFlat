@@ -99,8 +99,11 @@ $(function(){initNavTree('classCFlat_1_1Receiver.html','','classCFlat_1_1Receive
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a029c146309bda501f1438e34856bbd8a" id="r_a029c146309bda501f1438e34856bbd8a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a029c146309bda501f1438e34856bbd8a">Receiver</a> (int _port, string _ip=&quot;0.0.0.0&quot;)</td></tr>
 <tr class="memitem:a90092d5e9da1467e1cef42184aeef5f4" id="r_a90092d5e9da1467e1cef42184aeef5f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a90092d5e9da1467e1cef42184aeef5f4">Add</a> (<a class="el" href="classCFlat_1_1Routing_1_1Route.html">Route</a> route)</td></tr>
+<tr class="memdesc:a90092d5e9da1467e1cef42184aeef5f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new page to the receiver.  <br /></td></tr>
 <tr class="memitem:a70b9ffa5f63c1578bac163fb5c4471ef" id="r_a70b9ffa5f63c1578bac163fb5c4471ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a70b9ffa5f63c1578bac163fb5c4471ef">Add</a> (<a class="el" href="classCFlat_1_1Routing_1_1ByteItem.html">ByteItem</a> byteItem)</td></tr>
+<tr class="memdesc:a70b9ffa5f63c1578bac163fb5c4471ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new file to the receiver. Use for images.  <br /></td></tr>
 <tr class="memitem:a207e28c68b87e7bdd6d9201181d6c39e" id="r_a207e28c68b87e7bdd6d9201181d6c39e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a207e28c68b87e7bdd6d9201181d6c39e">Run</a> ()</td></tr>
+<tr class="memdesc:a207e28c68b87e7bdd6d9201181d6c39e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the web server.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-attribs" class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -179,6 +182,15 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Adds a new file to the receiver. Use for images. </p>
+<p>Matches with regex.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">byteItem</td><td>Any class that inherits from <a class="el" href="classCFlat_1_1Routing_1_1ByteItem.html" title="Used to represent a non-text static file.">ByteItem</a></td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a90092d5e9da1467e1cef42184aeef5f4" name="a90092d5e9da1467e1cef42184aeef5f4"></a>
@@ -203,6 +215,15 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Adds a new page to the receiver. </p>
+<p>Matches with regex</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">route</td><td>Any class that inherits from <a class="el" href="classCFlat_1_1Routing_1_1Route.html" title="Used in Receiver to determine what to run when a request is received.">Route</a></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -253,6 +274,14 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Starts the web server. </p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">Exception</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

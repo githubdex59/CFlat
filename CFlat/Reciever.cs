@@ -31,16 +31,32 @@ public class Receiver
         _byteItems = new List<ByteItem>();
     }
 
+    /// <summary>
+    /// Adds a new page to the receiver.
+    ///
+    /// Matches with regex
+    /// </summary>
+    /// <param name="route">Any class that inherits from Route</param>
     public void Add(Route route)
     {
         _routes.Add(route);
     }
 
+    /// <summary>
+    /// Adds a new file to the receiver. Use for images
+    ///
+    /// Matches with regex.
+    /// </summary>
+    /// <param name="byteItem">Any class that inherits from ByteItem</param>
     public void Add(ByteItem byteItem)
     {
         _byteItems.Add(byteItem);
     }
-
+    
+    /// <summary>
+    /// Starts the web server
+    /// </summary>
+    /// <exception cref="Exception"></exception>
     public void Run()
     {
         if (_routes.Count == 0) throw new Exception("No routes found");
