@@ -1,10 +1,19 @@
 var searchData=
 [
-  ['dealwithheaders_0',['DealWithHeaders',['../classCFlat_1_1Html_1_1WebPage.html#ae84ac857e76cffcbe9cbe77408292b00',1,'CFlat::Html::WebPage']]],
-  ['division_1',['Division',['../classCFlat_1_1Html_1_1Division.html',1,'CFlat.Html.Division'],['../classCFlat_1_1Html_1_1Division.html#a785daac2d0e5d22aa8e923229f338904',1,'CFlat.Html.Division.Division(List&lt; HtmlElement &gt; children, string css, Attributes attributes)'],['../classCFlat_1_1Html_1_1Division.html#a364d13527f9762d74c06c18ec013d502',1,'CFlat.Html.Division.Division(List&lt; HtmlElement &gt; children, string css)'],['../classCFlat_1_1Html_1_1Division.html#a032f6a82c24979b7d6606c7779a8cfbb',1,'CFlat.Html.Division.Division(List&lt; HtmlElement &gt; children, Attributes attributes)'],['../classCFlat_1_1Html_1_1Division.html#a42b383247bc9c158bccd520d28b0bceb',1,'CFlat.Html.Division.Division(List&lt; HtmlElement &gt; children)']]],
-  ['division_2ecs_2',['Division.cs',['../Division_8cs.html',1,'']]],
-  ['docs_3',['Docs',['../namespaceDocs.html',1,'']]],
-  ['docs_2eassemblyinfo_2ecs_4',['Docs.AssemblyInfo.cs',['../Docs_8AssemblyInfo_8cs.html',1,'']]],
-  ['docs_2eglobalusings_2eg_2ecs_5',['Docs.GlobalUsings.g.cs',['../Docs_8GlobalUsings_8g_8cs.html',1,'']]],
-  ['document_6',['Document',['../classCFlat_1_1Html_1_1WebPage_1_1Document.html',1,'CFlat::Html::WebPage']]]
+  ['cflat_0',['CFlat',['../namespaceCFlat.html',1,'']]],
+  ['cflat_2eassemblyinfo_2ecs_1',['CFlat.AssemblyInfo.cs',['../CFlat_8AssemblyInfo_8cs.html',1,'']]],
+  ['cflat_2eglobalusings_2eg_2ecs_2',['CFlat.GlobalUsings.g.cs',['../CFlat_8GlobalUsings_8g_8cs.html',1,'']]],
+  ['cflat_3a_3ahtml_3',['Html',['../namespaceCFlat_1_1Html.html',1,'CFlat']]],
+  ['cflat_3a_3ahtml_3a_3abase_4',['Base',['../namespaceCFlat_1_1Html_1_1Base.html',1,'CFlat::Html']]],
+  ['cflat_3a_3ahtml_3a_3abase_3a_3astrings_5',['Strings',['../namespaceCFlat_1_1Html_1_1Base_1_1Strings.html',1,'CFlat::Html::Base']]],
+  ['cflat_3a_3ahtml_3a_3acollections_6',['Collections',['../namespaceCFlat_1_1Html_1_1Collections.html',1,'CFlat::Html']]],
+  ['cflat_3a_3ahtml_3a_3acss_7',['Css',['../namespaceCFlat_1_1Html_1_1Css.html',1,'CFlat::Html']]],
+  ['cflat_3a_3ahtml_3a_3adata_8',['Data',['../namespaceCFlat_1_1Html_1_1Data.html',1,'CFlat::Html']]],
+  ['cflat_3a_3ahtml_3a_3aio_9',['IO',['../namespaceCFlat_1_1Html_1_1IO.html',1,'CFlat::Html']]],
+  ['cflat_3a_3ahtml_3a_3aio_3a_3aecmascript_10',['EcmaScript',['../namespaceCFlat_1_1Html_1_1IO_1_1EcmaScript.html',1,'CFlat::Html::IO']]],
+  ['cflat_3a_3arouting_11',['Routing',['../namespaceCFlat_1_1Routing.html',1,'CFlat']]],
+  ['contains_12',['Contains',['../classCFlat_1_1Html_1_1Attributes-1-g.html#a0b8058a151b3c0e43c74dcea8a93373f',1,'CFlat::Html::Attributes-1-g']]],
+  ['cookie_13',['Cookie',['../classCFlat_1_1Html_1_1IO_1_1EcmaScript_1_1Cookie.html',1,'CFlat.Html.IO.EcmaScript.Cookie'],['../classCFlat_1_1Html_1_1IO_1_1EcmaScript_1_1Cookie.html#a6717b9ec78307c93fb2f8a28b1077b31',1,'CFlat.Html.IO.EcmaScript.Cookie.Cookie()']]],
+  ['cookie_2ecs_14',['Cookie.cs',['../Cookie_8cs.html',1,'']]],
+  ['count_15',['Count',['../classCFlat_1_1Html_1_1Attributes-1-g.html#a5b7e68ffaa124a4631db9fc9a8d8cdaa',1,'CFlat::Html::Attributes-1-g']]]
 ];

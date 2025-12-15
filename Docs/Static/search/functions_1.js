@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['contains_0',['Contains',['../classCFlat_1_1Html_1_1Attributes-1-g.html#a0b8058a151b3c0e43c74dcea8a93373f',1,'CFlat::Html::Attributes-1-g']]],
-  ['cookie_1',['Cookie',['../classCFlat_1_1Html_1_1IO_1_1EcmaScript_1_1Cookie.html#a6717b9ec78307c93fb2f8a28b1077b31',1,'CFlat::Html::IO::EcmaScript::Cookie']]]
+  ['byteitem_0',['ByteItem',['../classCFlat_1_1Routing_1_1ByteItem.html#a77b97eb937ee3d3d300421351419fad6',1,'CFlat.Routing.ByteItem.ByteItem()'],['../classCFlat_1_1Routing_1_1ByteItem.html#a623b82186ae5ed26b97b37fb65fe7a5f',1,'CFlat.Routing.ByteItem.ByteItem(string p)']]]
 ];

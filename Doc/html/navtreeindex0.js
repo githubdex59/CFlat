@@ -1,6 +1,7 @@
 var NAVTREEINDEX0 =
 {
 "Attributes_8cs.html":[2,0,0,0,5],
+"ByteItem_8cs.html":[2,0,0,2,0],
 "CFlat_2obj_2Debug_2net9_80_2_8NETCoreApp_00Version_0av9_80_8AssemblyAttributes_8cs.html":[2,0,0,1,0,0,0],
 "CFlat_8AssemblyInfo_8cs.html":[2,0,0,1,0,0,1],
 "CFlat_8GlobalUsings_8g_8cs.html":[2,0,0,1,0,0,2],
@@ -21,17 +22,18 @@ var NAVTREEINDEX0 =
 "HtmlParagraph_8cs.html":[2,0,0,0,0,0,0],
 "HtmlString_8cs.html":[2,0,0,0,0,0,1],
 "HtmlTable_8cs.html":[2,0,0,0,3,0],
+"Image_8cs.html":[2,0,0,2,1],
 "InvalidHtmlException_8cs.html":[2,0,0,0,9],
 "ListValue_8cs.html":[2,0,0,0,1,2],
 "Lists_8cs.html":[2,0,2,2],
-"Method_8cs.html":[2,0,0,2,0],
+"Method_8cs.html":[2,0,0,2,2],
 "Ordering_8cs.html":[2,0,0,0,1,3],
 "Paragraphs_8cs.html":[2,0,2,1,1],
 "Reciever_8cs.html":[2,0,0,3],
 "Root_8cs.html":[2,0,2,1,2],
-"Route_8cs.html":[2,0,0,2,1],
+"Route_8cs.html":[2,0,0,2,3],
 "Sizing_8cs.html":[2,0,0,0,2,0],
-"StaticFile_8cs.html":[2,0,0,2,2],
+"StaticFile_8cs.html":[2,0,0,2,4],
 "Table_8cs.html":[2,0,2,1,3],
 "Test_8cs.html":[2,0,2,4],
 "Tests_2Program_8cs.html":[2,0,2,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX0 =
 "classCFlat_1_1Html_1_1ElementAttribute-1-g.html#a77aa405361d8417f3610bed14c6b9db9":[0,0,0,0,8,0],
 "classCFlat_1_1Html_1_1ElementAttribute-1-g.html#a77aa405361d8417f3610bed14c6b9db9":[1,0,0,0,7,0],
 "classCFlat_1_1Html_1_1ElementAttribute-1-g.html#ac30dc234fde6e60d6520fb353d7c61f3":[0,0,0,0,8,4],
-"classCFlat_1_1Html_1_1ElementAttribute-1-g.html#ac30dc234fde6e60d6520fb353d7c61f3":[1,0,0,0,7,4],
-"classCFlat_1_1Html_1_1ElementAttribute-1-g.html#af42c9354a7695a83ffde6c92c25fad60":[0,0,0,0,8,5],
-"classCFlat_1_1Html_1_1ElementAttribute-1-g.html#af42c9354a7695a83ffde6c92c25fad60":[1,0,0,0,7,5]
+"classCFlat_1_1Html_1_1ElementAttribute-1-g.html#ac30dc234fde6e60d6520fb353d7c61f3":[1,0,0,0,7,4]
 };

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['operator_21_3d_0',['operator!=',['../classCFlat_1_1Html_1_1ElementAttribute-1-g.html#ac30dc234fde6e60d6520fb353d7c61f3',1,'CFlat.Html.ElementAttribute-1-g.operator!=()'],['../classCFlat_1_1Routing_1_1Route.html#a8775889943b0e9bc8f79e5db837258b6',1,'CFlat.Routing.Route.operator!=()']]],
-  ['operator_3d_3d_1',['operator==',['../classCFlat_1_1Html_1_1ElementAttribute-1-g.html#af42c9354a7695a83ffde6c92c25fad60',1,'CFlat.Html.ElementAttribute-1-g.operator==()'],['../classCFlat_1_1Routing_1_1Route.html#ab9571fe78059a3699f5e944a380bb53f',1,'CFlat.Routing.Route.operator==()']]]
+  ['main_0',['Main',['../classDocs_1_1Program.html#a3513d762225dfca206ff49d802dbd252',1,'Docs.Program.Main()'],['../classTests_1_1Program.html#abfd184a1cac4a95e4d67e7536bbe7494',1,'Tests.Program.Main()']]]
 ];

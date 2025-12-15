@@ -99,6 +99,7 @@ $(function(){initNavTree('classCFlat_1_1Receiver.html','','classCFlat_1_1Receive
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a029c146309bda501f1438e34856bbd8a" id="r_a029c146309bda501f1438e34856bbd8a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a029c146309bda501f1438e34856bbd8a">Receiver</a> (int _port, string _ip=&quot;0.0.0.0&quot;)</td></tr>
 <tr class="memitem:a90092d5e9da1467e1cef42184aeef5f4" id="r_a90092d5e9da1467e1cef42184aeef5f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a90092d5e9da1467e1cef42184aeef5f4">Add</a> (<a class="el" href="classCFlat_1_1Routing_1_1Route.html">Route</a> route)</td></tr>
+<tr class="memitem:a70b9ffa5f63c1578bac163fb5c4471ef" id="r_a70b9ffa5f63c1578bac163fb5c4471ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a70b9ffa5f63c1578bac163fb5c4471ef">Add</a> (<a class="el" href="classCFlat_1_1Routing_1_1ByteItem.html">ByteItem</a> byteItem)</td></tr>
 <tr class="memitem:a207e28c68b87e7bdd6d9201181d6c39e" id="r_a207e28c68b87e7bdd6d9201181d6c39e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a207e28c68b87e7bdd6d9201181d6c39e">Run</a> ()</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-attribs" class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
@@ -119,6 +120,7 @@ Private Member Functions</h2></td></tr>
 Private Attributes</h2></td></tr>
 <tr class="memitem:aec3604ee5c241d7300206b08d12b3807" id="r_aec3604ee5c241d7300206b08d12b3807"><td class="memItemLeft" align="right" valign="top">TcpListener&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aec3604ee5c241d7300206b08d12b3807">_listener</a></td></tr>
 <tr class="memitem:a880a2de593a9830846612b3ed0c54912" id="r_a880a2de593a9830846612b3ed0c54912"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="classCFlat_1_1Routing_1_1Route.html">Route</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a880a2de593a9830846612b3ed0c54912">_routes</a></td></tr>
+<tr class="memitem:a72ab7cff0e10d445403387405795b799" id="r_a72ab7cff0e10d445403387405795b799"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="classCFlat_1_1Routing_1_1ByteItem.html">ByteItem</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a72ab7cff0e10d445403387405795b799">_byteItems</a></td></tr>
 <tr class="memitem:a052a33d5adfbe2ebd99564b57ed73606" id="r_a052a33d5adfbe2ebd99564b57ed73606"><td class="memItemLeft" align="right" valign="top">Dictionary&lt; string, string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a052a33d5adfbe2ebd99564b57ed73606">headers</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
@@ -154,8 +156,33 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="a70b9ffa5f63c1578bac163fb5c4471ef" name="a70b9ffa5f63c1578bac163fb5c4471ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70b9ffa5f63c1578bac163fb5c4471ef">&#9670;&#160;</a></span>Add() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CFlat.Receiver.Add </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classCFlat_1_1Routing_1_1ByteItem.html">ByteItem</a></td>          <td class="paramname"><span class="paramname"><em>byteItem</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a90092d5e9da1467e1cef42184aeef5f4" name="a90092d5e9da1467e1cef42184aeef5f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a90092d5e9da1467e1cef42184aeef5f4">&#9670;&#160;</a></span>Add()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a90092d5e9da1467e1cef42184aeef5f4">&#9670;&#160;</a></span>Add() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -309,6 +336,28 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
+<a id="a72ab7cff0e10d445403387405795b799" name="a72ab7cff0e10d445403387405795b799"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72ab7cff0e10d445403387405795b799">&#9670;&#160;</a></span>_byteItems</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="classCFlat_1_1Routing_1_1ByteItem.html">ByteItem</a>&gt; CFlat.Receiver._byteItems</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel private">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a595042ca693e603e5c900bc73eeb0819" name="a595042ca693e603e5c900bc73eeb0819"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a595042ca693e603e5c900bc73eeb0819">&#9670;&#160;</a></span>_instance</h2>
 

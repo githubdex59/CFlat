@@ -40,6 +40,7 @@ public class StaticFile : Route
                 if (type == "*/*") _type = rFirstLine[1].Split('.').Last() switch
                 {
                     "js" => "text/javascript",
+                    "png"  => "image/png",
                     _ => "text/plain"
                 };
             }

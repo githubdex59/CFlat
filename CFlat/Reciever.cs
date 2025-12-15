@@ -2,6 +2,7 @@
 using System.Net.Http.Headers;
 using System.Net.Sockets;
 using System.Text;
+using System.Text.RegularExpressions;
 using CFlat.Html;
 using CFlat.Routing;
 
@@ -18,6 +19,7 @@ public class Receiver
     public static Receiver _instance;
     private TcpListener _listener;
     private List<Route> _routes;
+    private List<ByteItem> _byteItems;
     
     public Receiver(int _port, string _ip = "0.0.0.0")
     {
@@ -26,11 +28,17 @@ public class Receiver
         _listener = new TcpListener(IPAddress.Parse(_ip), _port);
         _instance = this;
         _routes = new List<Route>();
+        _byteItems = new List<ByteItem>();
     }
 
     public void Add(Route route)
     {
         _routes.Add(route);
+    }
+
+    public void Add(ByteItem byteItem)
+    {
+        _byteItems.Add(byteItem);
     }
 
     public void Run()
@@ -76,14 +84,28 @@ public class Receiver
             {
                 method = Method.GET;
             }
-            
-            if (_routes.Contains(new Route(rFirstLine[1], method)))
+
+            if (_byteItems.Contains(new ByteItem(rFirstLine[1])))
+            {
+                try
+                {
+                    int index = _byteItems.IndexOf(new ByteItem(rFirstLine[1]));
+                    byte[] data = _byteItems[index].Render(ref stream, headers);
+                    stream.Write(data, 0, data.Length);
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e);
+                }
+            }
+            else if (_routes.Contains(new Route(rFirstLine[1], method)))
             {
 
                 try
                 {
                     int index = _routes.IndexOf(new Route(rFirstLine[1], method));
                     string html = _routes[index]._page.Render(ref stream, headers);
+                    
                     stream.Write(Encoding.ASCII.GetBytes(html), 0, html.Length);
                 }
                 catch (Exception e)
@@ -112,7 +134,7 @@ public class Receiver
                                $"Content-Encoding: {contentEncoding}\r\n" +
                                $"X-Clacks-Overhead \"GNU Terry Pratchett\"\n" +
                                "X-Content-Type-Options: nosniff\n"+
-                               $"Content-Type: {contentType ?? "text/plain"};v=b3\r\n\r\n";
+                               $"Content-Type: {contentType};v=b3\r\n\r\n";
 
         Console.WriteLine(responseHeaderBuffer);
         byte[] responseBytes = Encoding.UTF8.GetBytes(responseHeaderBuffer);

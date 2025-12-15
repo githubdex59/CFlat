@@ -33,6 +33,9 @@ var hierarchy =
       ] ]
     ] ],
     [ "IEquatable", null, [
+      [ "CFlat.Routing.ByteItem", "classCFlat_1_1Routing_1_1ByteItem.html", [
+        [ "CFlat.Routing.Image", "classCFlat_1_1Routing_1_1Image.html", null ]
+      ] ],
       [ "CFlat.Routing.Route", "classCFlat_1_1Routing_1_1Route.html", [
         [ "CFlat.Routing.StaticFile", "classCFlat_1_1Routing_1_1StaticFile.html", null ]
       ] ]

@@ -1,9 +1,8 @@
 var searchData=
 [
-  ['paragraphs_0',['Paragraphs',['../classTests_1_1WebServer_1_1Paragraphs.html',1,'Tests.WebServer.Paragraphs'],['../classTests_1_1WebServer_1_1Paragraphs.html#a9434fda53a6727bde81a480f0717e0b6',1,'Tests.WebServer.Paragraphs.Paragraphs()']]],
-  ['paragraphs_2ecs_1',['Paragraphs.cs',['../Paragraphs_8cs.html',1,'']]],
-  ['parseheaders_2',['ParseHeaders',['../classCFlat_1_1Receiver.html#a2130a00220a15f209d4ebc2e16496cb0',1,'CFlat::Receiver']]],
-  ['path_3',['path',['../classCFlat_1_1Routing_1_1StaticFile_1_1File.html#af5d9a4fc0aa02bea3b636f0ebfcb939c',1,'CFlat::Routing::StaticFile::File']]],
-  ['program_4',['Program',['../classDocs_1_1Program.html',1,'Docs.Program'],['../classTests_1_1Program.html',1,'Tests.Program']]],
-  ['program_2ecs_5',['Program.cs',['../Docs_2Program_8cs.html',1,'(Global Namespace)'],['../Tests_2Program_8cs.html',1,'(Global Namespace)']]]
+  ['operator_21_3d_0',['operator!=',['../classCFlat_1_1Html_1_1ElementAttribute-1-g.html#ac30dc234fde6e60d6520fb353d7c61f3',1,'CFlat.Html.ElementAttribute-1-g.operator!=()'],['../classCFlat_1_1Routing_1_1ByteItem.html#a72da8ee6f076658b19a49c014d2b3b43',1,'CFlat.Routing.ByteItem.operator!=()'],['../classCFlat_1_1Routing_1_1Route.html#a8775889943b0e9bc8f79e5db837258b6',1,'CFlat.Routing.Route.operator!=()']]],
+  ['operator_3d_3d_1',['operator==',['../classCFlat_1_1Html_1_1ElementAttribute-1-g.html#af42c9354a7695a83ffde6c92c25fad60',1,'CFlat.Html.ElementAttribute-1-g.operator==()'],['../classCFlat_1_1Routing_1_1ByteItem.html#a385c89b189bd97c53367c973db0b7994',1,'CFlat.Routing.ByteItem.operator==()'],['../classCFlat_1_1Routing_1_1Route.html#ab9571fe78059a3699f5e944a380bb53f',1,'CFlat.Routing.Route.operator==()']]],
+  ['ordered_2',['Ordered',['../namespaceCFlat_1_1Html_1_1Collections.html#aa43c293aa9a608578130e885676bfe51a26e09a1ee1517389c7b07f42df65561a',1,'CFlat::Html::Collections']]],
+  ['ordering_3',['Ordering',['../namespaceCFlat_1_1Html_1_1Collections.html#aa43c293aa9a608578130e885676bfe51',1,'CFlat::Html::Collections']]],
+  ['ordering_2ecs_4',['Ordering.cs',['../Ordering_8cs.html',1,'']]]
 ];

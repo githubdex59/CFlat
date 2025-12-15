@@ -34,6 +34,8 @@ var annotated_dup =
         [ "WebPage", "classCFlat_1_1Html_1_1WebPage.html", "classCFlat_1_1Html_1_1WebPage" ]
       ] ],
       [ "Routing", "namespaceCFlat_1_1Routing.html", [
+        [ "ByteItem", "classCFlat_1_1Routing_1_1ByteItem.html", "classCFlat_1_1Routing_1_1ByteItem" ],
+        [ "Image", "classCFlat_1_1Routing_1_1Image.html", "classCFlat_1_1Routing_1_1Image" ],
         [ "Route", "classCFlat_1_1Routing_1_1Route.html", "classCFlat_1_1Routing_1_1Route" ],
         [ "StaticFile", "classCFlat_1_1Routing_1_1StaticFile.html", "classCFlat_1_1Routing_1_1StaticFile" ]
       ] ],

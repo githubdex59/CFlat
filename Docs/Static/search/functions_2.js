@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['dealwithheaders_0',['DealWithHeaders',['../classCFlat_1_1Html_1_1WebPage.html#ae84ac857e76cffcbe9cbe77408292b00',1,'CFlat::Html::WebPage']]],
-  ['division_1',['Division',['../classCFlat_1_1Html_1_1Division.html#a785daac2d0e5d22aa8e923229f338904',1,'CFlat.Html.Division.Division(List&lt; HtmlElement &gt; children, string css, Attributes attributes)'],['../classCFlat_1_1Html_1_1Division.html#a364d13527f9762d74c06c18ec013d502',1,'CFlat.Html.Division.Division(List&lt; HtmlElement &gt; children, string css)'],['../classCFlat_1_1Html_1_1Division.html#a032f6a82c24979b7d6606c7779a8cfbb',1,'CFlat.Html.Division.Division(List&lt; HtmlElement &gt; children, Attributes attributes)'],['../classCFlat_1_1Html_1_1Division.html#a42b383247bc9c158bccd520d28b0bceb',1,'CFlat.Html.Division.Division(List&lt; HtmlElement &gt; children)']]]
+  ['contains_0',['Contains',['../classCFlat_1_1Html_1_1Attributes-1-g.html#a0b8058a151b3c0e43c74dcea8a93373f',1,'CFlat::Html::Attributes-1-g']]],
+  ['cookie_1',['Cookie',['../classCFlat_1_1Html_1_1IO_1_1EcmaScript_1_1Cookie.html#a6717b9ec78307c93fb2f8a28b1077b31',1,'CFlat::Html::IO::EcmaScript::Cookie']]]
 ];
